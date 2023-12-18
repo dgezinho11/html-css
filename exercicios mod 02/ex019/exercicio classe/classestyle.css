@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(241, 141, 218, 0.687);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tag1 {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.basico {
+    background-color: #79F545;
+    text-align: center;
+    color: white;
+}
+
+.intermediario {
+    background-color: #67699B;
+    color: white;
+    text-align: center;
+}
+
+.avancado {
+    background-color: #F0814F;
+    color: white;
+    text-align: center;
+}
+
+.aprendendo {
+    text-align: center;
+}

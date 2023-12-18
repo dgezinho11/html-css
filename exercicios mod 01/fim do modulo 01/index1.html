@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="HTML.ico" type="image/x-icon">
+  <title>Primeiro Site</title>
+</head>
+<body>
+  <h1>Essa é a Tag &lt;title&gt; &lt;/title&gt; usada para dar Título na ABA!!</h1>
+
+  <h1>Olá, Mundo! (Essa é a tag H1 usada para dar título no corpo da pagina. Existe o H1 até o H6)</h1>
+
+  <P>Essa é a (linha Horizontal) usando a tag &lt;hr&gt; </P>
+  <hr> 
+
+  <p>Essa tag é chamado Parágrafo &lt;p&gt;</p>
+
+  <p>Também existe a Tag &lt;br&gt; <br>para (Quebrar Linhas - Break Row)</p>
+
+  <p>Usar caracteres especiais no lugar dos colchetes para demonstrar a tag usando o & l t ; - &lt; (Menor que - Less Than)</p>
+
+  <p>Usar caracteres especiais no lugar dos colchetes para demonstrar a tag usando o & g t ; - &gt; (Maior que - Greater than)</p>
+
+  <h2>Adicionando Códigos Especiais</h2>
+  <p>Existe outros códigos especiais e são chamados de HTML Entities. Ex: & reg; &reg; - & copy; &copy; </p>
+
+  <h2>Inserindo emoji</h2>
+  <p>Podemos também inserir emojis usando o Site (emojipedia.org), escolhendo uma categoria, clique no emoji escolhido e procure o seu (Codepoints). O código do emoji U+1F604 será adaptado para o código & # X 1F604 - Ex: &#x1f604;</p>
+
+  <h2>Adicionando Imagem</h2>
+  <p>Podemos também adicionar imagem com a tag &lt;img src="Aqui é o link para adicionar a imagem" alt="Aqui é a legenda da imagem"&gt; - Obs: a imagem tem que estar na mesmo pasta para não ocorrer erros. 
+  <br><img src="HTML.ico" alt="Síbolo HTML"></p>
+
+  <h2>Texto em Favicon</h2>
+  <p>O favicon são pequenos icones que aparecem na parte superior do navegador junto ao &lt;title&gt; (Olhe ao topo)</p>
+  &lt;link rel="shortcut icon" href="Aqui adiciona o endereço favicon da pasta" type="image/x-icon"&gt;
+
+  <h2>Texto em Negrito</h2>
+  <p>Podemos usar também a tag &lt;strong&gt; para <strong>(Negrito)</strong>.</p>
+
+  <h2>Texto em Itálico</h2>
+  <p>E também podemos usar a tag &lt;em&gt; para <em>itálico</em>. </p>
+
+  <h2>Marca Texto</h2>
+  <p>Podemos tambem usar Marcação com a tag <mark>&lt;mark&gt;</mark> para pintar ou sinalizar algo importante.</p>
+
+  <h2>Texto Menor</h2>
+  <p>A tag &lt;small&gt; pode ser usada para deixar as <small>letras do texto Menor</small></p>
+
+  <h2>Texto Deletado</h2>
+  <p>A tag para texto deletado pode ser como &lt;del&gt; que significa que <del>o texto está ali, pode ser lido, mas deve ser desconsiderado</del></p>
+
+  <h2>Texto Inserido</h2>
+  <p>O <ins>texto inserido</ins> pode ser usado com a tag &lt;ins&gt;</p>
+
+  <h2>Texto Sobrescrito e Subscrito</h2>
+  <p>Texto Sobrescrito e Subscrito pode ser usado com as tags &lt;sub&gt; e &lt;sup&gt;. Ex: x<sup>2</sup> - H<sub>2</sub>O</p>
+
+  <h2>Trechos de códigos / Código-Fonte</h2>  
+  <p>Existem Trechos de Códigos com a tag &lt;code&gt;. A tag pode ser usada para dar valor semântica ao navegador e efeito visual (Mono-espaçada), para usar a tag &lt;code&gt;, podemos acrescentar a tag &lt;pre&gt;.</p>
+  
+  <h2>Exemplo de código em Python</h2>
+  <code> <p>(Sem - Mono-espaçado)</p>
+  num = int(input('digite um número'))
+  if num % 2 == 0:
+      print(f'O número {num} é par')
+  else:
+      print(f'O número {num} é ímpar')
+  print('FIM DO PROGRAMA')             
+  </code>
+
+  <pre>
+    <code> <p>(Com - Mono-espaçado)</p>
+      num = int(input('digite um número'))
+      if num % 2 == 0:
+          print(f'O número {num} é par')
+      else:
+          print(f'O número {num} é ímpar')
+      print('FIM DO PROGRAMA')
+      </code>
+  </pre>
+
+  <h2>Citações</h2>
+  <p>"Citações" Um trecho de texto escrito ou dito por outra pessoa, que vai ilustrar perfeitamente algo que você quer explicar usando "ASPAS".</p>
+
+  <P>Existe outra forma de criar "Citação em HTML" com a tag &lt;q&gt; (do inglês quote, que significa Citar) <q>o texto que estiver entre &lt;q&gt; e &lt;/q&gt; já vai receber automaticamente as aspas</q>.</P>
+
+  <p>Também podemos criar citaçães (em bloco) e que tenham um parágrafo só pra si. Neste caso, colocaremos tudo dentro de &lt;blockquote&gt;&lt;/blockquote&gt;. O texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando parâmetro "cite" dentro da tag.</p>
+  
+  <blockquote>
+  O PHP é uma linguagem para criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores Web (especialmente Apache). 
+  </blockquote>
+  
+  <H2>ABREVIAÇÕES</H2>
+  <p>Abreviações é usada sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag &lt;abbr&gt;.</p>
+  <p>Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+  
+  <H2>ODITREVNI OTXET / TEXTO INVERTIDO</H2>
+  <P>O texto invertido não faz muito sentido mas se por acaso for usada, pode usar a tag &lt;bdo&gt;.</P>
+  <p><bdo dir="rtl">Minha Rua Está Invertida</bdo> / <bdo dir="ltr">Minha Rua Está Invertida</bdo> </p>
+
+</body>
+</html>
+
+
