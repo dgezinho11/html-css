@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,33 @@
             padding: 10px;
         }
 
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(119, 136, 153, 0.322);
+        }
+
+        tbody > tr:nth-child(2n) {
+            /* nth-child(odd) ou (2n-1) = Impar
+               nth-child(2n) ou (2n) = par */
+            background-color: lightslategray;
+        }
+        
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: black;
         }
     </style>
 
@@ -38,12 +63,19 @@
                       (TR, TD, TH)        -->
 
 <table>
+    <caption>População das Unidades Federativa</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col" >Estado</th>
+            <th scope="col" style="width: 50px;" >População</th>
         </tr>
     </thead>
+    <tfoot>
+        <tr>
+            <th scope="row" >Total de Habitantes</th>
+            <td class="num"><strong>210.147.125</strong></td>
+        </tr>
+    </tfoot>
     <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -58,12 +90,7 @@
                 <td class="num">17.364.993 </td>
             </tr>
     </tbody>
-    <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <th>0000</th>
-            </tr>
-    </tfoot>
-</table>                      
+</table>  
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus id nisi ullam dicta perferendis beatae molestiae ea fuga dolore aliquam vero tenetur quidem, quaerat consequatur, doloribus nam earum voluptatem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus id nisi ullam dicta perferendis beatae molestiae ea fuga dolore aliquam vero tenetur quidem, quaerat consequatur, doloribus nam earum voluptatem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus id nisi ullam dicta perferendis beatae molestiae ea fuga dolore aliquam vero tenetur quidem, quaerat consequatur, doloribus nam earum voluptatem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus id nisi ullam dicta perferendis beatae molestiae ea fuga dolore aliquam vero tenetur quidem, quaerat consequatur, doloribus nam earum voluptatem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus id nisi ullam dicta perferendis beatae molestiae ea fuga dolore aliquam vero tenetur quidem, quaerat consequatur, doloribus nam earum voluptatem?</p>                    
 </body>
 </html>
