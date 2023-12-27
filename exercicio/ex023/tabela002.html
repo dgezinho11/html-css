@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas002</title>
     <style>
+        /* Anatomia para tabelas Grandes
+          Table
+             THEAD = Cabeça do Texto
+                      (TR, TD, TH)   
+                TBODY = Corpo do Texto
+                      (TR, TD, TH) 
+                  TFOOT = Rodapé do Texto 
+                      (TR, TD, TH)       */
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -22,6 +31,10 @@
 
         .num {
             text-align: right;
+        }
+
+        .direita {
+            text-align: left;
         }
 
         caption {
@@ -53,15 +66,6 @@
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
-    <!-- Anatomia para tabelas Grandes
-          Table
-             THEAD = Cabeça do Texto
-                      (TR, TD, TH)   
-                TBODY = Corpo do Texto
-                      (TR, TD, TH) 
-                  TFOOT = Rodapé do Texto 
-                      (TR, TD, TH)        -->
-
 <table>
     <caption>População das Unidades Federativa</caption>
     <thead>
@@ -72,22 +76,22 @@
     </thead>
     <tfoot>
         <tr>
-            <th scope="row" >Total de Habitantes</th>
+            <th class="direita" scope="row">Total de Habitantes</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tr>
     </tfoot>
     <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45.919.049</td>
+                <td>45.919.049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21.168.791</td>
+                <td>21.168.791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">17.364.993 </td>
+                <td>17.364.993 </td>
             </tr>
     </tbody>
 </table>  
